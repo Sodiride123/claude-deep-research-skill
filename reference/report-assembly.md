@@ -98,8 +98,6 @@ Update sources.json after each section. This survives context compaction and ena
 **2. File naming convention:**
 - `research_report_20251104_topic_slug.md`
 
-**3. Also save copy to:** `~/.claude/research_output/` (internal tracking)
-
 ---
 
 ## Word Count Per Section

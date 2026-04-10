@@ -4,12 +4,7 @@ Enterprise-grade research engine for Claude Code. Produces citation-backed repor
 
 ## Installation
 
-```bash
-# Clone into Claude Code skills directory
-git clone https://github.com/199-biotechnologies/claude-deep-research-skill.git ~/.claude/skills/deep-research
-```
-
-No additional dependencies required for basic usage.
+Clone the repo and read `SKILL.md` to get started. No additional dependencies required for basic usage.
 
 ### Optional: search-cli (multi-provider search)
 
