@@ -55,8 +55,6 @@ Key features:
 
 Reports saved to `~/Documents/[Topic]_Research_[Date]/`:
 - Markdown (primary source of truth)
-- HTML (McKinsey-style, auto-opened in browser)
-- PDF (professional print via WeasyPrint)
 
 Reports >18K words auto-continue via recursive agent spawning with context preservation.
 
@@ -86,19 +84,14 @@ deep-research/
 │   ├── methodology.md                # 8-phase pipeline details
 │   ├── report-assembly.md            # Progressive generation strategy
 │   ├── quality-gates.md              # Validation standards
-│   ├── html-generation.md            # McKinsey HTML conversion
-│   ├── continuation.md               # Auto-continuation protocol
-│   └── weasyprint_guidelines.md      # PDF generation
+│   └── continuation.md               # Auto-continuation protocol
 ├── templates/
-│   ├── report_template.md            # Report structure template
-│   └── mckinsey_report_template.html # HTML report template
+│   └── report_template.md            # Report structure template
 ├── scripts/
 │   ├── validate_report.py            # 9-check structure validator
 │   ├── verify_citations.py           # DOI/URL/hallucination checker
 │   ├── source_evaluator.py           # Source credibility scoring
 │   ├── citation_manager.py           # Citation tracking
-│   ├── md_to_html.py                 # Markdown to HTML converter
-│   ├── verify_html.py                # HTML verification
 │   └── research_engine.py            # Core orchestration engine
 └── tests/
     └── fixtures/                     # Test report fixtures

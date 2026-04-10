@@ -54,18 +54,15 @@ Mode Selection
 
 1. **Phase 1-7:** Load [methodology.md](./reference/methodology.md) for detailed phase instructions
 2. **Phase 8 (Report):** Load [report-assembly.md](./reference/report-assembly.md) for progressive generation
-3. **HTML/PDF output:** Load [html-generation.md](./reference/html-generation.md)
-4. **Quality checks:** Load [quality-gates.md](./reference/quality-gates.md)
-5. **Long reports (>18K words):** Load [continuation.md](./reference/continuation.md)
+3. **Quality checks:** Load [quality-gates.md](./reference/quality-gates.md)
+4. **Long reports (>18K words):** Load [continuation.md](./reference/continuation.md)
 
 **Templates:**
 - Report structure: [report_template.md](./templates/report_template.md)
-- HTML styling: [mckinsey_report_template.html](./templates/mckinsey_report_template.html)
 
 **Scripts:**
 - `python scripts/validate_report.py --report [path]`
 - `python scripts/verify_citations.py --report [path]`
-- `python scripts/md_to_html.py [markdown_path]`
 
 ---
 
@@ -83,8 +80,6 @@ Mode Selection
 
 **Output files (all to `~/Documents/[Topic]_Research_[YYYYMMDD]/`):**
 - Markdown (primary source)
-- HTML (McKinsey style, auto-opened)
-- PDF (professional print, auto-opened)
 
 **Quality standards:**
 - 10+ sources, 3+ per major claim
