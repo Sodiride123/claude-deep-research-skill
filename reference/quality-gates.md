@@ -1,57 +1,5 @@
 # Quality Gates and Standards
 
-## Validation Scripts
-
-### Citation Verification
-
-```bash
-python scripts/verify_citations.py --report [path]
-```
-
-**Checks:**
-- DOI resolution (verifies citation exists)
-- Title/year matching (detects mismatched metadata)
-- Flags suspicious entries (recent year without DOI, no URL, failed verification)
-
-**On suspicious citations:** Review flagged, remove/replace fabricated, re-run until clean.
-
-### Structure & Quality Validation
-
-```bash
-python scripts/validate_report.py --report [path]
-```
-
-**9 automated checks:**
-1. Executive summary length (200-400 words)
-2. Required sections present
-3. Citations formatted [1], [2], [3]
-4. Bibliography matches citations
-5. No placeholder text (TBD, TODO)
-6. Word count reasonable (500-10000)
-7. Minimum 10 sources
-8. No broken internal links
-
-**Failure handling:**
-- Attempt 1: Auto-fix formatting/links
-- Attempt 2: Manual review + correction
-- After 2 failures: STOP, report issues, ask user
-
-### Validation Loop Protocol
-
-**After generating ANY report, run this loop:**
-
-1. Run `python scripts/validate_report.py --report [path]`
-2. Run `python scripts/verify_citations.py --report [path]`
-3. If EITHER fails:
-   - Read error output carefully
-   - Fix the specific issues identified
-   - Re-run BOTH validators
-4. Maximum 3 retry cycles. If still failing after 3 cycles: STOP and report issues to user.
-
-**Do NOT skip validation.** Every report must pass both scripts before delivery.
-
----
-
 ## Anti-Fatigue Protocol
 
 ### Quality Check (Apply to EVERY Section)

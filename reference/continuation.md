@@ -152,7 +152,6 @@ Calculate: Current words + remaining sections x avg_words_per_section
 - Generate final content sections
 - Generate COMPLETE bibliography from state.citations.bibliography_entries
 - Read entire assembled report
-- Run validation: `python scripts/validate_report.py --report [path]`
 - Delete continuation_state.json (cleanup)
 - Report complete to user
 

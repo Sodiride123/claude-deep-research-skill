@@ -54,15 +54,11 @@ Mode Selection
 
 1. **Phase 1-7:** Load [methodology.md](./reference/methodology.md) for detailed phase instructions
 2. **Phase 8 (Report):** Load [report-assembly.md](./reference/report-assembly.md) for progressive generation
-3. **Quality checks:** Load [quality-gates.md](./reference/quality-gates.md)
+3. **Writing standards:** Load [quality-gates.md](./reference/quality-gates.md)
 4. **Long reports (>18K words):** Load [continuation.md](./reference/continuation.md)
 
 **Templates:**
 - Report structure: [report_template.md](./templates/report_template.md)
-
-**Scripts:**
-- `python scripts/validate_report.py --report [path]`
-- `python scripts/verify_citations.py --report [path]`
 
 ---
 

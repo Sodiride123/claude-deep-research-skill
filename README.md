@@ -64,8 +64,6 @@ Reports >18K words auto-continue via recursive agent spawning with context prese
 - Executive summary 200-400 words
 - Findings 600-2,000 words each, prose-first (>=80%)
 - Full bibliography with URLs, no placeholders
-- Automated validation: `validate_report.py` (9 checks) + `verify_citations.py` (DOI/URL/hallucination detection)
-- Validation loop: validate &rarr; fix &rarr; retry (max 3 cycles)
 
 ## Search Tools
 
@@ -83,13 +81,11 @@ deep-research/
 ├── reference/
 │   ├── methodology.md                # 8-phase pipeline details
 │   ├── report-assembly.md            # Progressive generation strategy
-│   ├── quality-gates.md              # Validation standards
+│   ├── quality-gates.md              # Writing standards
 │   └── continuation.md               # Auto-continuation protocol
 ├── templates/
 │   └── report_template.md            # Report structure template
 ├── scripts/
-│   ├── validate_report.py            # 9-check structure validator
-│   ├── verify_citations.py           # DOI/URL/hallucination checker
 │   ├── source_evaluator.py           # Source credibility scoring
 │   ├── citation_manager.py           # Citation tracking
 │   └── research_engine.py            # Core orchestration engine
